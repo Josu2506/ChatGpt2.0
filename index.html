@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Local</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <ul>
+        <li class="message bot">
+          <span>GPT</span>
+          <p>Esta es la respuesta del Bot</p>
+        </li>
+        <li class="message user">
+          <span>Tú</span>
+          <p>Esta es la respuesta del Usuario</p>
+        </li>
+        <li class="message user">
+          <span>Tú</span>
+          <p>
+            Esta es la respuesta del Usuario y es una respuesta muy larga para
+            ver que no se rompe nada
+          </p>
+        </li>
+      </ul>
+    </main>
+
+    <form>
+      <input placeholder="Escribe tu mensaje aquí ..." />
+      <button disabled>Enviar</button>
+    </form>
+
+    <small>&nbsp;</small>
+
+    <template id="message-template">
+      <li class="message">
+        <span></span>
+        <p></p>
+      </li>
+    </template>
+
+
+  </body>
+</html>
